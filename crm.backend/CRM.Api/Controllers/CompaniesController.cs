@@ -1,18 +1,18 @@
 ﻿using crm.backend.CRM.Api.DTO;
 using crm.backend.CRM.Application.Services;
+using crm.backend.CRM.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace crm.backend.CRM.Api.Controllers
 {
-    [Route("api/[controller]")]
-    public class TaskController:ControllerBase
+    [ApiController]
+    [Route("api/companies")]
+    public class CompaniesController : ControllerBase
     {
-        private readonly TaskService _service;
+        private readonly CompanyService _service;
 
-
-
-        public TaskController(TaskService service)
+        public CompaniesController(CompanyService service)
         {
             _service = service;
         }
@@ -28,37 +28,22 @@ namespace crm.backend.CRM.Api.Controllers
         [HttpGet("getById")]
         public async Task<IActionResult> GetById([FromQuery] int id)
         {
-            var result = await _service.GetById(id);
-            if (result == null)
-                return NotFound();
-            return Ok(result);
-        }
-
-
-        [Authorize(Roles = "USER,ADMIN")]
-        [HttpGet("getByUserId")]
-        public async Task<IActionResult> GetByUserId(
-        [FromQuery] int userId,
-        [FromQuery] DateTime? fromDate,
-        [FromQuery] DateTime? toDate)
-        {
-            var result = await _service.GetByUserId(userId, fromDate, toDate);
-            return Ok(result);
+            return Ok(await _service.GetById(id));
         }
 
         [Authorize(Roles = "USER,ADMIN")]
         [HttpPost("save")]
-        public async Task<IActionResult> Save([FromBody]TaskRequest body)
+        public async Task<IActionResult> Save([FromBody] CompanyRequest company) 
         {
-            var str = await _service.Save(body);
+            var str = await _service.Save(company);
             return Ok(str);
         }
 
         [Authorize(Roles = "USER,ADMIN")]
         [HttpPost("update")]
-        public async Task<IActionResult> Update([FromBody] TaskRequest body)
+        public async Task<IActionResult> Update([FromBody] CompanyRequest company)
         {
-            var str = await _service.Update(body);
+            var str = await _service.Update(company);
             return Ok(str);
         }
 
@@ -69,6 +54,5 @@ namespace crm.backend.CRM.Api.Controllers
             var str = await _service.Delete(id);
             return Ok(str);
         }
-
     }
 }

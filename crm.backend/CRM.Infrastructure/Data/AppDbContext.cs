@@ -14,6 +14,7 @@ namespace crm.backend.CRM.Infrastructure.Data
         public DbSet<CustomFieldValue> CustomFieldValues { get; set; }
         public DbSet<Domain.Entities.Task> Tasks { get; set; }
         public DbSet<Domain.Entities.TaskStatus> Task_Statuses { get; set; }
+        public DbSet<Company> Companies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

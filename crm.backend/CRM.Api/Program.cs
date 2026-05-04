@@ -5,17 +5,35 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi;
+using Serilog;
+using Microsoft.AspNetCore.Diagnostics;
+
+
+// Serilog initialization
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
+    .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
+    .WriteTo.Console()
+    .WriteTo.File(
+        Path.Combine(AppContext.BaseDirectory, "logs/log-.txt"),
+        rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 📦 SERVICES
+// LOGS
+builder.Host.UseSerilog();
+
+// SERVICES
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ContactService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<TaskService>();
 builder.Services.AddScoped<TaskStatusService>();
 
-// 🗄️ DB
+// DB
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("Default"),
@@ -24,7 +42,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "xXW2ap2VYZvLtnMOgK90xnDoTge8MeAu3h9pB7yM5Tu";
 
-// 🔐 AUTH
+// AUTH
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -52,7 +70,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Inserisci il token JWT così: Bearer {token}"
+        Description = "Inserisci il token JWT: Bearer {token}"
     });
 });
 
@@ -75,6 +93,34 @@ builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 
 var app = builder.Build();
+
+// ERROR HANDLING
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
+
+        var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+        var exception = exceptionHandlerPathFeature?.Error;
+
+        if (exception != null)
+        {
+            logger.LogError(exception, "Errore non gestito");
+        }
+
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+
+        await context.Response.WriteAsync(
+            System.Text.Json.JsonSerializer.Serialize(new
+            {
+                message = "Errore interno"
+            }));
+    });
+});
+
+app.UseSerilogRequestLogging();
 
 app.UseCors("CorsPolicy");
 

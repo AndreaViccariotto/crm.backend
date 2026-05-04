@@ -118,16 +118,16 @@ namespace crm.backend.CRM.Application.Services
             return "Attività aggiornata con successo";  
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<string> Delete(int id)
         {
             var task = await _db.Tasks.FindAsync(id);
             if (task == null)
-                return false;
+                return "Attività non trovata";
 
             _db.Tasks.Remove(task);
             await _db.SaveChangesAsync();
 
-            return true;
+            return "Attività eliminata con successo";
         }
     }
 }
