@@ -1,6 +1,7 @@
 ﻿using crm.backend.CRM.Api.DTO;
 using crm.backend.CRM.Application.Services;
 using crm.backend.CRM.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace crm.backend.CRM.Api.Controllers
@@ -16,26 +17,54 @@ namespace crm.backend.CRM.Api.Controllers
             _service = service;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(CreateContactRequest request)
+        [Authorize(Roles = "USER,ADMIN")]
+        [HttpPost("save")]
+        public async Task<IActionResult> Save(ContactRequest request)
         {
-            var contact = new Contact
-            {
-                Name = request.Name,
-                Email = request.Email,
-                Phone = request.Phone
-            };
 
-            var id = await _service.CreateContactAsync(contact, request.CustomFields);
 
-            return Ok(new { id });
+            var str = await _service.Save(request);
+
+            return Ok(str);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [Authorize(Roles = "USER,ADMIN")]
+        [HttpGet("GetById")]
+        public async Task<IActionResult> GetById([FromQuery]int id)
         {
-            var result = await _service.GetContactAsync(id);
-            return Ok(result);
+            return Ok(await _service.GetById(id));
+        }
+
+        [Authorize(Roles = "USER,ADMIN")]
+        [HttpGet("Get")]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _service.Get());
+        }
+
+        [Authorize(Roles ="USER,ADMIN")]
+        [HttpGet("GetByCompanyId")]
+        public async Task<IActionResult> GetByCompanyId([FromQuery] int companyId)
+        {
+            return Ok(await _service.GetByCompanyId(companyId));
+        }
+
+        [Authorize(Roles = "USER,ADMIN")]
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update(ContactRequest request)
+        {
+            var str = await _service.Update(request);
+
+            return Ok(str);
+        }
+
+        [Authorize(Roles = "USER,ADMIN")]
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete([FromQuery]int id)
+        {
+            var str = await _service.Delete(id);
+
+            return Ok(str);
         }
     }
 }

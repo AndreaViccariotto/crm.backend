@@ -1,0 +1,268 @@
+2026-05-09 15:11:17.843 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 128.1227 ms
+2026-05-09 15:11:17.977 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 9.2932 ms
+2026-05-09 15:11:18.011 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 87.1383 ms
+2026-05-09 15:11:18.011 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 87.1721 ms
+2026-05-09 15:11:18.011 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 48.0964 ms
+2026-05-09 15:11:18.011 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 87.2114 ms
+2026-05-09 15:11:18.464 +02:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 3.6011 ms
+2026-05-09 15:11:18.624 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 183.0018 ms
+2026-05-09 15:11:35.494 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.4916 ms
+2026-05-09 15:11:37.189 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1689.0456 ms
+2026-05-09 15:11:37.230 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0664 ms
+2026-05-09 15:11:37.230 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.2467 ms
+2026-05-09 15:11:37.290 +02:00 [INF] HTTP GET /api/users/get responded 200 in 50.7107 ms
+2026-05-09 15:11:37.296 +02:00 [INF] HTTP GET /api/task/get responded 200 in 58.3410 ms
+2026-05-09 15:11:45.258 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0894 ms
+2026-05-09 15:11:45.334 +02:00 [INF] HTTP GET /api/task/get responded 200 in 68.3753 ms
+2026-05-09 15:14:24.696 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.3558 ms
+2026-05-09 15:14:24.704 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0844 ms
+2026-05-09 15:14:24.737 +02:00 [INF] HTTP GET /api/task/get responded 200 in 24.9151 ms
+2026-05-09 15:14:24.756 +02:00 [INF] HTTP GET /api/users/get responded 200 in 46.7377 ms
+2026-05-09 15:14:25.478 +02:00 [INF] HTTP GET /api/task/get responded 200 in 10.5596 ms
+2026-05-09 15:14:25.487 +02:00 [INF] HTTP GET /api/users/get responded 200 in 19.5139 ms
+2026-05-09 15:14:35.099 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0798 ms
+2026-05-09 15:14:35.120 +02:00 [ERR] HTTP GET /api/companies/get responded 500 in 12.3398 ms
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-09 15:14:35.158 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-09 15:14:35.168 +02:00 [ERR] Errore non gestito
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-09 15:14:52.026 +02:00 [INF] HTTP GET /api/companies/get responded 401 in 4.3401 ms
+2026-05-09 15:15:01.501 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0755 ms
+2026-05-09 15:15:01.515 +02:00 [ERR] HTTP GET /api/companies/get responded 500 in 1.9689 ms
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-09 15:15:01.580 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-09 15:15:01.628 +02:00 [ERR] Errore non gestito
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.CompanyService' while attempting to activate 'crm.backend.CRM.Api.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method105(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-09 15:15:47.671 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 91.9008 ms
+2026-05-09 15:15:47.746 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 10.8878 ms
+2026-05-09 15:15:47.766 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 30.8708 ms
+2026-05-09 15:15:47.766 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 30.7413 ms
+2026-05-09 15:15:47.766 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 31.3068 ms
+2026-05-09 15:15:47.770 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 34.9669 ms
+2026-05-09 15:15:48.072 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 119.7013 ms
+2026-05-09 15:15:52.939 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.5254 ms
+2026-05-09 15:15:54.397 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1452.9654 ms
+2026-05-09 15:15:54.432 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0745 ms
+2026-05-09 15:15:54.432 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.3850 ms
+2026-05-09 15:15:54.500 +02:00 [INF] HTTP GET /api/users/get responded 200 in 61.7329 ms
+2026-05-09 15:15:54.509 +02:00 [INF] HTTP GET /api/task/get responded 200 in 70.7081 ms
+2026-05-09 15:15:56.605 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0852 ms
+2026-05-09 15:15:56.680 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 62.4790 ms
+2026-05-09 15:16:09.862 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 2.3381 ms
+2026-05-09 15:16:09.972 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 26.7770 ms
+2026-05-09 15:17:42.355 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0892 ms
+2026-05-09 15:17:42.384 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 12.6218 ms
+2026-05-09 15:17:47.033 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 177.4689 ms
+2026-05-09 15:20:47.253 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.3108 ms
+2026-05-09 15:20:47.531 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 9.8574 ms
+2026-05-09 15:22:33.403 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.2055 ms
+2026-05-09 15:22:33.682 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.9937 ms
+2026-05-09 15:27:04.787 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1117 ms
+2026-05-09 15:27:05.136 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 49.5660 ms
+2026-05-09 15:27:56.575 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.2057 ms
+2026-05-09 15:27:56.938 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 23.4266 ms
+2026-05-09 15:29:53.853 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 5.5451 ms
+2026-05-09 15:29:53.883 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 16.5004 ms
+2026-05-09 15:29:55.465 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 77.3653 ms
+2026-05-09 15:30:15.852 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0732 ms
+2026-05-09 15:30:15.878 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 18.5318 ms
+2026-05-09 15:32:16.407 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.2853 ms
+2026-05-09 15:32:16.437 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.7362 ms
+2026-05-09 15:33:09.899 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1201 ms
+2026-05-09 15:33:09.933 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 17.6916 ms
+2026-05-09 15:33:13.078 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.7080 ms
+2026-05-09 15:33:53.779 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 1.5257 ms
+2026-05-09 15:33:53.819 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 34.9680 ms
+2026-05-09 15:34:05.060 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1618 ms
+2026-05-09 15:34:05.238 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 12.0991 ms
+2026-05-09 15:34:16.267 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0455 ms
+2026-05-09 15:34:16.527 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 255.4251 ms
+2026-05-09 15:34:16.559 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0527 ms
+2026-05-09 15:34:16.560 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.1005 ms
+2026-05-09 15:34:16.572 +02:00 [INF] HTTP GET /api/users/get responded 200 in 8.3922 ms
+2026-05-09 15:34:16.576 +02:00 [INF] HTTP GET /api/task/get responded 200 in 9.5311 ms
+2026-05-09 15:34:24.235 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0469 ms
+2026-05-09 15:34:24.365 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 127.1367 ms
+2026-05-09 15:34:24.384 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.3128 ms
+2026-05-09 15:34:24.398 +02:00 [INF] HTTP GET /api/task/get responded 200 in 8.1657 ms
+2026-05-09 15:34:25.563 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0400 ms
+2026-05-09 15:34:25.576 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.5467 ms
+2026-05-09 15:34:36.877 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0560 ms
+2026-05-09 15:34:36.957 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 13.3884 ms
+2026-05-09 15:35:14.060 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0466 ms
+2026-05-09 15:35:14.257 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.3940 ms
+2026-05-09 15:37:24.183 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0643 ms
+2026-05-09 15:37:24.244 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 30.5921 ms
+2026-05-09 15:38:35.267 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0878 ms
+2026-05-09 15:38:35.378 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 49.3931 ms
+2026-05-09 15:39:18.894 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.5048 ms
+2026-05-09 15:39:19.040 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 136.1408 ms
+2026-05-09 15:39:19.072 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0517 ms
+2026-05-09 15:39:19.072 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0393 ms
+2026-05-09 15:39:19.087 +02:00 [INF] HTTP GET /api/users/get responded 200 in 10.3396 ms
+2026-05-09 15:39:19.097 +02:00 [INF] HTTP GET /api/task/get responded 200 in 19.1165 ms
+2026-05-09 15:39:36.137 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.4052 ms
+2026-05-09 15:39:36.137 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0280 ms
+2026-05-09 15:39:36.154 +02:00 [INF] HTTP GET /api/task/get responded 200 in 8.2022 ms
+2026-05-09 15:39:36.159 +02:00 [INF] HTTP GET /api/users/get responded 200 in 14.1898 ms
+2026-05-09 15:39:39.249 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0641 ms
+2026-05-09 15:39:39.263 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 9.3517 ms
+2026-05-09 15:39:39.745 +02:00 [INF] HTTP GET /api/task/get responded 200 in 6.2620 ms
+2026-05-09 15:39:40.233 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 6.4383 ms
+2026-05-09 15:39:40.735 +02:00 [INF] HTTP GET /api/task/get responded 200 in 4.9116 ms
+2026-05-09 15:39:41.098 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 6.0431 ms
+2026-05-09 15:39:48.931 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0256 ms
+2026-05-09 15:39:49.059 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 126.2015 ms
+2026-05-09 15:39:49.073 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.0276 ms
+2026-05-09 15:39:49.085 +02:00 [INF] HTTP GET /api/task/get responded 200 in 6.6908 ms
+2026-05-09 15:39:52.342 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0402 ms
+2026-05-09 15:39:52.355 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.0324 ms
+2026-05-09 17:12:55.627 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0702 ms
+2026-05-09 17:12:55.671 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 23.2817 ms
+2026-05-09 17:29:18.462 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.1492 ms
+2026-05-09 17:29:18.672 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 201.7006 ms
+2026-05-09 17:29:24.922 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.0365 ms
+2026-05-09 17:29:24.938 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 12.3656 ms
+2026-05-09 17:29:33.852 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.0482 ms
+2026-05-09 17:29:33.869 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 11.5463 ms
+2026-05-09 17:30:17.626 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0358 ms
+2026-05-09 17:30:17.665 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.3414 ms
+2026-05-09 17:31:13.986 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.0760 ms
+2026-05-09 17:31:14.023 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 29.9786 ms
+2026-05-09 17:31:33.263 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.1149 ms
+2026-05-09 17:32:34.396 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 61126.6985 ms
+2026-05-09 17:35:09.859 +02:00 [INF] HTTP OPTIONS /api/companies/save responded 204 in 0.0519 ms
+2026-05-09 17:35:13.996 +02:00 [INF] HTTP POST /api/companies/save responded 200 in 4114.2098 ms
+2026-05-09 17:35:24.318 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1297 ms
+2026-05-09 17:35:24.335 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.7793 ms
+2026-05-09 17:35:26.181 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 320.2792 ms
+2026-05-09 17:35:54.011 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0384 ms
+2026-05-09 17:35:54.132 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 29.9536 ms
+2026-05-09 17:36:32.662 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0491 ms
+2026-05-09 17:36:32.770 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.2513 ms
+2026-05-09 17:36:42.476 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0379 ms
+2026-05-09 17:36:42.911 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.6465 ms
+2026-05-09 17:36:48.191 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0306 ms
+2026-05-09 17:36:48.316 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 17.9835 ms
+2026-05-09 17:42:05.736 +02:00 [INF] HTTP OPTIONS /api/companies/get/1 responded 204 in 0.7233 ms
+2026-05-09 17:42:05.753 +02:00 [INF] HTTP GET /api/companies/get/1 responded 404 in 0.6747 ms
+2026-05-09 17:42:42.743 +02:00 [INF] HTTP OPTIONS /api/companies/get/1 responded 204 in 0.0366 ms
+2026-05-09 17:42:42.784 +02:00 [INF] HTTP GET /api/companies/get/1 responded 404 in 5.7410 ms
+2026-05-09 17:42:50.435 +02:00 [INF] HTTP OPTIONS /api/companies/get/1 responded 204 in 0.0415 ms
+2026-05-09 17:42:50.445 +02:00 [INF] HTTP GET /api/companies/get/1 responded 404 in 0.5013 ms
+2026-05-09 17:43:50.956 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0322 ms
+2026-05-09 17:43:51.219 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 158.4363 ms
+2026-05-09 17:43:55.783 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0381 ms
+2026-05-09 17:43:55.797 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.8948 ms
+2026-05-09 17:44:01.885 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0340 ms
+2026-05-09 17:44:01.979 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 24.1983 ms
+2026-05-09 17:44:59.360 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0325 ms
+2026-05-09 17:44:59.551 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 16.2567 ms
+2026-05-09 17:45:02.311 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.2819 ms
+2026-05-09 17:45:02.329 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 12.5166 ms
+2026-05-09 17:45:03.588 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 13.6294 ms
+2026-05-09 17:45:15.165 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0352 ms
+2026-05-09 17:45:15.424 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.4172 ms
+2026-05-09 17:46:13.741 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1073 ms
+2026-05-09 17:46:14.033 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 17.2522 ms
+2026-05-09 17:46:18.191 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 42.4018 ms
+2026-05-09 17:46:51.965 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0425 ms
+2026-05-09 17:46:52.141 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 12.1871 ms
+2026-05-09 17:47:20.184 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0390 ms
+2026-05-09 17:47:20.589 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 113.5024 ms
+2026-05-09 17:49:44.962 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0354 ms
+2026-05-09 17:49:45.046 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.4992 ms
+2026-05-09 17:51:11.985 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0368 ms
+2026-05-09 17:51:12.011 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 14.0256 ms
+2026-05-09 17:51:24.997 +02:00 [INF] HTTP OPTIONS /api/companies/delete/4 responded 204 in 0.0294 ms
+2026-05-09 17:51:25.004 +02:00 [INF] HTTP DELETE /api/companies/delete/4 responded 404 in 0.1584 ms

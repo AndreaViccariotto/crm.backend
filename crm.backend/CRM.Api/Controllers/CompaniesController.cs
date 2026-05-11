@@ -32,6 +32,13 @@ namespace crm.backend.CRM.Api.Controllers
         }
 
         [Authorize(Roles = "USER,ADMIN")]
+        [HttpGet("GetContacts")]
+        public async Task<IActionResult> GetContacts([FromQuery] int companyId)
+        {
+            return Ok(await _service.GetContacts(companyId));
+        }
+
+        [Authorize(Roles = "USER,ADMIN")]
         [HttpPost("save")]
         public async Task<IActionResult> Save([FromBody] CompanyRequest company) 
         {

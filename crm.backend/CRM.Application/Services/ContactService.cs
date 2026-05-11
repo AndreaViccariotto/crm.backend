@@ -1,4 +1,5 @@
-﻿using crm.backend.CRM.Domain.Entities;
+﻿using crm.backend.CRM.Api.DTO;
+using crm.backend.CRM.Domain.Entities;
 using crm.backend.CRM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,40 +14,123 @@ namespace crm.backend.CRM.Application.Services
             _db = db;
         }
 
-        public async Task<int> CreateContactAsync(Contact contact, Dictionary<int, string> customFields)
+        public async Task<string> Save(ContactRequest contact)
         {
-            _db.Contacts.Add(contact);
-            await _db.SaveChangesAsync();
 
-            foreach (var field in customFields)
+            var newContact = new Contact
             {
-                _db.CustomFieldValues.Add(new CustomFieldValue
-                {
-                    CustomFieldId = field.Key,
-                    EntityId = contact.Id,
-                    EntityName = "contacts",
-                    Value = field.Value
-                });
-            }
+                Name = contact.Name,
+                Email = contact.Email,
+                Phone = contact.Phone,
+                Company_Id = contact.Company_id
+            };
+
+            _db.Contacts.Add(newContact);
 
             await _db.SaveChangesAsync();
 
-            return contact.Id;
+            return "Contatto creato con successo.";
         }
 
-        public async Task<object> GetContactAsync(int id)
+        public async Task<ContactResponse?> GetById(int id)
         {
-            var contact = await _db.Contacts.FindAsync(id);
+            var contact = await _db.Contacts
+                .Include(c => c.Company)
+                .FirstOrDefaultAsync(c => c.Id == id);
 
-            var customValues = await _db.CustomFieldValues
-                .Where(x => x.EntityId == id && x.EntityName == "contacts")
+            if (contact == null)
+                return null;
+
+            return new ContactResponse
+            {
+                id = contact.Id,
+                Name = contact.Name,
+                Email = contact.Email,
+                Phone = contact.Phone,
+                Company_id = contact.Company_Id ?? 0,
+                company_name = contact.Company != null
+                    ? contact.Company.name
+                    : null,
+
+                Company = contact.Company
+            };
+        }
+
+        public async Task<List<ContactResponse>> GetByCompanyId(int companyId)
+        {
+            var contacts = await _db.Contacts
+                .Where(c => c.Company_Id == companyId)
+                .Include(c => c.Company)
+                .Select(contact => new ContactResponse
+                {
+                    id = contact.Id,
+                    Name = contact.Name,
+                    Email = contact.Email,
+                    Phone = contact.Phone,
+                    Company_id = contact.Company_Id ?? 0,
+                    company_name = contact.Company != null
+                        ? contact.Company.name
+                        : null,
+
+                    Company = contact.Company
+                })
                 .ToListAsync();
 
-            return new
-            {
-                contact,
-                customFields = customValues
-            };
+            return contacts;
+        }
+
+        public async Task<List<ContactResponse>> Get()
+        {
+            var contacts = await _db.Contacts
+                .Include(c => c.Company)
+                .Select(contact => new ContactResponse
+                {
+                    id = contact.Id,
+                    Name = contact.Name,
+                    Email = contact.Email,
+                    Phone = contact.Phone,
+                    Company_id = contact.Company_Id ?? 0,
+                    company_name = contact.Company != null
+                        ? contact.Company.name
+                        : null,
+
+                    Company = contact.Company
+                })
+                .ToListAsync();
+
+            return contacts;
+        }
+
+        public async Task<string> Update (ContactRequest request)
+        {
+            var contact = await _db.Contacts.FindAsync(request.id);
+
+            if (contact == null)
+                return null;
+
+            contact.Name = request.Name;
+            contact.Email = request.Email;
+            contact.Phone = request.Phone;
+            contact.Company_Id = request.Company_id;
+
+
+
+            await _db.SaveChangesAsync();
+
+            return "Contatto aggiornato con successo";
+        }
+
+        public async Task<string> Delete(int id)
+        {
+                var contact = await _db.Contacts.FindAsync(id);
+    
+                if (contact == null)
+                    return null;
+    
+                _db.Contacts.Remove(contact);
+                await _db.SaveChangesAsync();
+    
+                return "Contatto eliminato con successo";
         }
     }
 }

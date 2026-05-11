@@ -48,6 +48,22 @@ namespace crm.backend.CRM.Application.Services
             };
         }
 
+        public async Task<List<ContactResponse>> GetContacts(int companyId)
+        {
+            return await _db.Contacts
+                .Where(c => c.Company_Id == companyId)
+                .Select(c => new ContactResponse
+                {
+                    id = c.Id,
+                    Name = c.Name,
+                    Email = c.Email,
+                    Phone = c.Phone,
+                    Company_id = c.Company_Id ?? 0,
+                    company_name = c.Company != null ? c.Company.name : null
+                })
+                .ToListAsync();
+        }
+
         public async Task<string> Save(CompanyRequest request)
         {
                 var company = new Company

@@ -54,6 +54,28 @@ namespace crm.backend.CRM.Application.Services
             };  
         }
 
+        public async Task<List<TaskResponse>> GetByCompanyId(int companyId, DateTime? fromDate, DateTime? toDate)
+        {
+            return await _db.Tasks
+                .Where(x => x.company_id == companyId
+                                   && (!fromDate.HasValue || x.due_date >= fromDate.Value)
+                                                      && (!toDate.HasValue || x.due_date <= toDate.Value))
+                .Select(x => new TaskResponse
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    due_date = x.due_date,
+                    due_time = x.due_time,
+                    Description = x.Description,
+                    completed = x.completed,
+                    user_id = x.user_id,
+                    company_id = x.company_id,
+                    contact_id = x.contact_id,
+                    status_id = x.status_id
+                })
+                .ToListAsync();
+        }
+
         public async Task<List<TaskResponse>> GetByUserId(int userId, DateTime? fromDate, DateTime? toDate)
         {
             return await _db.Tasks

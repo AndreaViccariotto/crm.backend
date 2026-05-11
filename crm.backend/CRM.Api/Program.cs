@@ -32,6 +32,8 @@ builder.Services.AddScoped<ContactService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<TaskService>();
 builder.Services.AddScoped<TaskStatusService>();
+builder.Services.AddScoped<CompanyService>();
+builder.Services.AddScoped<ContactService>();
 
 // DB
 builder.Services.AddDbContext<AppDbContext>(options =>

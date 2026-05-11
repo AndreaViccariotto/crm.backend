@@ -47,6 +47,17 @@ namespace crm.backend.CRM.Api.Controllers
         }
 
         [Authorize(Roles = "USER,ADMIN")]
+        [HttpGet("getByCompanyId")]
+        public async Task<IActionResult> GetByCompanyId(
+                       [FromQuery] int companyId,
+                                  [FromQuery] DateTime? fromDate,
+                                             [FromQuery] DateTime? toDate)
+        {
+            var result = await _service.GetByCompanyId(companyId, fromDate, toDate);
+            return Ok(result);
+        }
+
+        [Authorize(Roles = "USER,ADMIN")]
         [HttpPost("save")]
         public async Task<IActionResult> Save([FromBody]TaskRequest body)
         {
