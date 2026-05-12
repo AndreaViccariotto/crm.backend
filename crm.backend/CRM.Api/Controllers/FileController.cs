@@ -26,7 +26,7 @@ namespace crm.backend.CRM.Api.Controllers
         [HttpPost("upload")]
         public async Task<IActionResult> Upload([FromBody] FileRequest req)
         {
-            var str = _service.Upload(req);
+            var str = await _service.Upload(req);
             return Ok(str);
         }
 

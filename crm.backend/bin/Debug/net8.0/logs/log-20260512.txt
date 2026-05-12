@@ -1,0 +1,483 @@
+2026-05-12 21:43:36.093 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 183.5931 ms
+2026-05-12 21:43:36.396 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 66.3013 ms
+2026-05-12 21:43:36.396 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 66.6262 ms
+2026-05-12 21:43:36.396 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 66.5621 ms
+2026-05-12 21:43:36.415 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 3.6870 ms
+2026-05-12 21:43:36.446 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.3976 ms
+2026-05-12 21:43:36.976 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 239.1419 ms
+2026-05-12 21:44:01.019 +02:00 [INF] HTTP GET /api/task/get responded 401 in 97.9514 ms
+2026-05-12 21:44:01.019 +02:00 [INF] HTTP GET /api/users/get responded 401 in 97.9513 ms
+2026-05-12 21:44:19.369 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 1.5850 ms
+2026-05-12 21:44:19.369 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 0.8362 ms
+2026-05-12 21:44:20.562 +02:00 [INF] HTTP GET /api/users/get responded 200 in 1188.9372 ms
+2026-05-12 21:44:20.566 +02:00 [INF] HTTP GET /api/task/get responded 200 in 1192.1887 ms
+2026-05-12 21:44:21.119 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0735 ms
+2026-05-12 21:44:21.194 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 66.4089 ms
+2026-05-12 21:44:23.317 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.1773 ms
+2026-05-12 21:44:23.317 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0249 ms
+2026-05-12 21:44:23.317 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.2114 ms
+2026-05-12 21:44:23.320 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.1096 ms
+2026-05-12 21:44:23.454 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 123.2820 ms
+2026-05-12 21:44:23.458 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 122.7180 ms
+2026-05-12 21:44:23.460 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 132.5474 ms
+2026-05-12 21:44:23.499 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 173.9378 ms
+2026-05-12 21:48:01.383 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.2088 ms
+2026-05-12 21:48:01.386 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 2.1276 ms
+2026-05-12 21:48:01.410 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0948 ms
+2026-05-12 21:48:01.460 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0721 ms
+2026-05-12 21:48:01.797 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 160.4610 ms
+2026-05-12 21:48:01.879 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 226.4852 ms
+2026-05-12 21:48:01.886 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 253.8644 ms
+2026-05-12 21:48:01.887 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 89.7416 ms
+2026-05-12 21:50:17.961 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.4921 ms
+2026-05-12 21:50:17.974 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0611 ms
+2026-05-12 21:50:17.996 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0781 ms
+2026-05-12 21:50:17.990 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0750 ms
+2026-05-12 21:50:18.067 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 51.2863 ms
+2026-05-12 21:50:18.079 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 40.6499 ms
+2026-05-12 21:50:18.112 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 20.7157 ms
+2026-05-12 21:50:18.112 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 33.9307 ms
+2026-05-12 21:50:54.866 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0831 ms
+2026-05-12 21:50:54.872 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0979 ms
+2026-05-12 21:50:54.963 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0557 ms
+2026-05-12 21:50:54.968 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 25.0271 ms
+2026-05-12 21:50:54.963 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0870 ms
+2026-05-12 21:50:55.006 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 36.9472 ms
+2026-05-12 21:50:55.023 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 7.9609 ms
+2026-05-12 21:50:55.028 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 5.0678 ms
+2026-05-12 21:51:42.033 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0853 ms
+2026-05-12 21:51:42.043 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0229 ms
+2026-05-12 21:51:42.043 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0936 ms
+2026-05-12 21:51:42.069 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0752 ms
+2026-05-12 21:51:42.115 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 27.6492 ms
+2026-05-12 21:51:42.379 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 265.2966 ms
+2026-05-12 21:51:42.429 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 48.0674 ms
+2026-05-12 21:51:42.434 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 59.2078 ms
+2026-05-12 21:52:05.182 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0515 ms
+2026-05-12 21:52:05.261 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0349 ms
+2026-05-12 21:52:05.261 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0350 ms
+2026-05-12 21:52:05.182 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.0243 ms
+2026-05-12 21:52:05.805 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 21.6323 ms
+2026-05-12 21:52:05.810 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 10.6770 ms
+2026-05-12 21:52:05.836 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 25.3998 ms
+2026-05-12 21:52:05.874 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 32.0320 ms
+2026-05-12 21:52:22.949 +02:00 [INF] HTTP OPTIONS /api/file/upload responded 204 in 0.4191 ms
+2026-05-12 21:52:23.136 +02:00 [ERR] HTTP POST /api/file/upload responded 500 in 181.9516 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,crm.backend.CRM.Application.Services.FileService+<Upload>d__3]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMember(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, NullabilityInfoContext nullabilityCtx, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo, NullabilityInfoContext nullabilityCtx)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateJsonTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CacheEntry.GetResult()
+   at System.Text.Json.JsonSerializerOptions.CachingContext.GetOrAddTypeInfo(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 21:52:23.193 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,crm.backend.CRM.Application.Services.FileService+<Upload>d__3]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMember(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, NullabilityInfoContext nullabilityCtx, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo, NullabilityInfoContext nullabilityCtx)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateJsonTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CacheEntry.GetResult()
+   at System.Text.Json.JsonSerializerOptions.CachingContext.GetOrAddTypeInfo(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:52:23.205 +02:00 [ERR] Errore non gestito
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,crm.backend.CRM.Application.Services.FileService+<Upload>d__3]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMember(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, NullabilityInfoContext nullabilityCtx, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo, NullabilityInfoContext nullabilityCtx)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateJsonTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CacheEntry.GetResult()
+   at System.Text.Json.JsonSerializerOptions.CachingContext.GetOrAddTypeInfo(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:53:58.444 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 91.0982 ms
+2026-05-12 21:53:58.511 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 1.1229 ms
+2026-05-12 21:53:58.537 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 37.5890 ms
+2026-05-12 21:53:58.537 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 35.6412 ms
+2026-05-12 21:53:58.537 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 37.6821 ms
+2026-05-12 21:53:58.538 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 37.6697 ms
+2026-05-12 21:53:58.894 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 152.3369 ms
+2026-05-12 21:54:28.914 +02:00 [INF] HTTP OPTIONS /api/file/upload responded 204 in 2.4885 ms
+2026-05-12 21:54:30.219 +02:00 [INF] HTTP POST /api/file/upload responded 200 in 1289.8405 ms
+2026-05-12 21:54:30.235 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.1003 ms
+2026-05-12 21:54:30.354 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'crm.backend.CRM.Infrastructure.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-05-12 21:54:30.496 +02:00 [ERR] HTTP GET /api/file/getByCompanyId responded 500 in 254.3191 ms
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 21:54:30.509 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:54:30.518 +02:00 [ERR] Errore non gestito
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:54:56.044 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0959 ms
+2026-05-12 21:54:56.074 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.1006 ms
+2026-05-12 21:54:56.106 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0873 ms
+2026-05-12 21:54:56.073 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.3246 ms
+2026-05-12 21:54:59.694 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'crm.backend.CRM.Infrastructure.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-05-12 21:55:02.172 +02:00 [ERR] HTTP GET /api/file/getByCompanyId responded 500 in 5806.4962 ms
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 21:55:02.186 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:55:02.203 +02:00 [ERR] Errore non gestito
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:55:02.243 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 5875.2159 ms
+2026-05-12 21:55:02.252 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 6046.1821 ms
+2026-05-12 21:55:02.260 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 2828.2792 ms
+2026-05-12 21:55:10.916 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0945 ms
+2026-05-12 21:55:10.919 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0761 ms
+2026-05-12 21:55:10.918 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.1046 ms
+2026-05-12 21:55:10.921 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0726 ms
+2026-05-12 21:55:10.952 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 21.8618 ms
+2026-05-12 21:55:11.060 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 108.4859 ms
+2026-05-12 21:56:44.127 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'crm.backend.CRM.Infrastructure.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-05-12 21:55:10.968 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 33.1185 ms
+2026-05-12 21:56:44.202 +02:00 [ERR] HTTP GET /api/file/getByCompanyId responded 500 in 93128.2544 ms
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 21:56:44.214 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:56:44.223 +02:00 [ERR] Errore non gestito
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method108(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at crm.backend.CRM.Application.Services.FileService.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Application\Services\FileService.cs:line 91
+   at crm.backend.CRM.Api.Controllers.FileController.GetByCompanyId(Int32 companyId) in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\FileController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-12 21:59:19.584 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 94.6368 ms
+2026-05-12 21:59:19.664 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 4.0071 ms
+2026-05-12 21:59:19.679 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 28.3817 ms
+2026-05-12 21:59:19.682 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 34.8410 ms
+2026-05-12 21:59:19.679 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 29.3672 ms
+2026-05-12 21:59:19.679 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 31.6179 ms
+2026-05-12 21:59:19.994 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 171.5479 ms
+2026-05-12 22:00:36.848 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 3.8427 ms
+2026-05-12 22:00:36.848 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 4.1609 ms
+2026-05-12 22:00:36.987 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 142.6851 ms
+2026-05-12 22:00:36.987 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.1519 ms
+2026-05-12 22:00:45.162 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 7455.3064 ms
+2026-05-12 22:00:45.165 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 7323.5339 ms
+2026-05-12 22:00:45.165 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 8114.4417 ms
+2026-05-12 22:00:45.165 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 7532.6600 ms
+2026-05-12 22:00:47.481 +02:00 [INF] HTTP OPTIONS /api/file/download responded 204 in 0.1014 ms
+2026-05-12 22:00:47.612 +02:00 [INF] HTTP GET /api/file/download responded 200 in 126.5267 ms
+2026-05-12 22:01:07.108 +02:00 [INF] HTTP OPTIONS /api/file/delete responded 204 in 0.1062 ms
+2026-05-12 22:01:07.260 +02:00 [INF] HTTP DELETE /api/file/delete responded 200 in 120.0141 ms
+2026-05-12 22:01:07.274 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0676 ms
+2026-05-12 22:01:07.286 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 6.0647 ms
+2026-05-12 22:01:11.204 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.1034 ms
+2026-05-12 22:01:11.215 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.0779 ms
+2026-05-12 22:01:11.273 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 16.1032 ms
+2026-05-12 22:01:11.257 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.0436 ms
+2026-05-12 22:01:11.400 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 84.5838 ms
+2026-05-12 22:01:11.426 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 91.6923 ms
+2026-05-12 22:01:11.451 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 21.3852 ms
+2026-05-12 22:01:43.534 +02:00 [INF] HTTP OPTIONS /api/file/download responded 204 in 0.2681 ms
+2026-05-12 22:01:43.582 +02:00 [INF] HTTP GET /api/file/download responded 200 in 38.5793 ms
+2026-05-12 22:03:08.031 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.2066 ms
+2026-05-12 22:03:08.031 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.2066 ms
+2026-05-12 22:03:08.040 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.0653 ms
+2026-05-12 22:03:08.069 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 1.4633 ms
+2026-05-12 22:03:08.122 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 7.9811 ms
+2026-05-12 22:03:08.107 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 24.1648 ms
+2026-05-12 22:03:08.209 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 88.8562 ms
+2026-05-12 22:03:08.215 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 70.8297 ms
+2026-05-12 22:03:13.349 +02:00 [INF] HTTP OPTIONS /api/file/download responded 204 in 0.0588 ms
+2026-05-12 22:04:12.596 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 96.1244 ms
+2026-05-12 22:04:12.659 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 5.3608 ms
+2026-05-12 22:04:12.682 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 30.6666 ms
+2026-05-12 22:04:12.689 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 37.5023 ms
+2026-05-12 22:04:12.682 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 29.9549 ms
+2026-05-12 22:04:12.682 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 32.8435 ms
+2026-05-12 22:04:12.923 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 119.9067 ms
+2026-05-12 22:04:27.482 +02:00 [INF] HTTP OPTIONS /api/file/download responded 204 in 7.0396 ms
+2026-05-12 22:04:34.216 +02:00 [INF] HTTP GET /api/file/download responded 200 in 6722.6116 ms

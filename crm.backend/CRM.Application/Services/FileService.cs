@@ -24,7 +24,8 @@ namespace crm.backend.CRM.Application.Services
             return new FileResponse
             {
                 id = file.id,
-                content = Convert.ToBase64String(bytes)
+                content = Convert.ToBase64String(bytes),
+                file_name = file.file_name,
             };
         }
 
