@@ -15,6 +15,7 @@ namespace crm.backend.CRM.Infrastructure.Data
         public DbSet<Domain.Entities.Task> Tasks { get; set; }
         public DbSet<Domain.Entities.TaskStatus> Task_Statuses { get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<Domain.Entities.File> Files { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

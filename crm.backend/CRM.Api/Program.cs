@@ -34,6 +34,7 @@ builder.Services.AddScoped<TaskService>();
 builder.Services.AddScoped<TaskStatusService>();
 builder.Services.AddScoped<CompanyService>();
 builder.Services.AddScoped<ContactService>();
+builder.Services.AddScoped<FileService>();
 
 // DB
 builder.Services.AddDbContext<AppDbContext>(options =>
