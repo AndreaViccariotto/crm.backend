@@ -16,15 +16,17 @@ namespace crm.backend.CRM.Application.Services
             _jwt = jwt;
         }
 
-        public async Task<string> Register(string username, string password)
+        public async Task<string> Register(UserDto body)
         {
-            if (_db.Users.Any(x => x.username == username))
+            if (_db.Users.Any(x => x.Id == body.Id))
                 throw new Exception("utente già esistente");
 
             var user = new User
             {
-                username = username,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(password)
+                username = body.Username,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(body.Password),
+                RoleId = body.RoleId,
+                Email = body.Email
             };
 
             _db.Users.Add(user);
@@ -64,5 +66,53 @@ namespace crm.backend.CRM.Application.Services
                 })
                 .ToListAsync();
         }
+
+        public async Task<UserDto> GetUserById(int id)
+        {
+            var user = await _db.Users
+                .Include(x => x.Role)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (user == null)
+                return null;
+
+            return new UserDto
+            {
+                Id = user.Id,
+                Username = user.username,
+                Role = user.Role.Name,
+                RoleId = user.RoleId,
+            };
+        }
+
+        public async Task<string> DeleteUser(int id)
+        {
+            var user = await _db.Users.FindAsync(id);
+            if (user == null)
+                throw new Exception("Utente non trovato");
+
+            _db.Users.Remove(user);
+            await _db.SaveChangesAsync();
+
+            return "Utente eliminato con successo";
+        }
+
+        public async Task<string> update(UserDto body)
+        {
+            var user = await _db.Users.FindAsync(body.Id);
+            if (user == null)
+                throw new Exception("Utente non trovato");
+
+            user.username = body.Username;
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(body.Password);
+            user.RoleId = body.RoleId;
+
+            _db.Users.Update(user);
+            await _db.SaveChangesAsync();
+
+            return "Utente aggiornato con successo";
+        }
+
+
     }
 }

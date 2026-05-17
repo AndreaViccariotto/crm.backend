@@ -26,9 +26,7 @@ namespace crm.backend.CRM.Infrastructure.Data
                 .HasIndex(x => x.CustomFieldId);
 
             modelBuilder.Entity<User>()
-                .HasOne(u => u.Role)
-                .WithMany(r => r.Users)
-                .HasForeignKey(u => u.RoleId);
+                .HasOne(u => u.Role);
         }
     }
 }

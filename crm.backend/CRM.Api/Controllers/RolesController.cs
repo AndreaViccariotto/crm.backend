@@ -6,58 +6,42 @@ using Microsoft.AspNetCore.Mvc;
 namespace crm.backend.CRM.Api.Controllers
 {
     [ApiController]
-    [Route("api/users")]
-    public class UsersController : ControllerBase
+    [Route("api/roles")]
+    public class RolesController: ControllerBase
     {
-        private readonly UserService _service;
+        private readonly RoleService _service;
 
-        public UsersController(UserService service)
+        public RolesController(RoleService service)
         {
             _service = service;
         }
 
-        [HttpGet]
         [Authorize(Roles = "USER, ADMIN")]
-        [Route("get")]
+        [HttpGet("get")]
         public async Task<IActionResult> GetAll()
         {
-            var users = await _service.GetUsers();
-            return Ok(users);
+            var roles = await _service.Get();
+            return Ok(roles);
         }
 
         [Authorize(Roles = "USER, ADMIN")]
-        [HttpGet("GetById")]
-        public async Task<IActionResult> GetById([FromQuery]int id)
+        [HttpGet("getById")]
+        public async Task<IActionResult> GetById([FromQuery] int id)
         {
-            var user = await _service.GetUserById(id);
-            if (user == null)
+            var role = await _service.GetById(id);
+            if (role == null)
                 return NotFound();
 
-            return Ok(user);
+            return Ok(role);
         }
 
         [Authorize(Roles = "USER, ADMIN")]
         [HttpPost("save")]
-        public async Task<IActionResult> Save([FromBody] UserDto userDto)
+        public async Task<IActionResult> Save([FromBody] RoleRequest roleDto)
         {
             try
             {
-                var result = await _service.Register(userDto);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [Authorize(Roles = "USER, ADMIN")]
-        [HttpDelete("delete")]
-        public async Task<IActionResult> Delete([FromQuery] int id)
-        {
-            try
-            {
-                var result = await _service.DeleteUser(id);
+                var result = await _service.Save(roleDto);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -68,11 +52,11 @@ namespace crm.backend.CRM.Api.Controllers
 
         [Authorize(Roles = "USER, ADMIN")]
         [HttpPost("update")]
-        public async Task<IActionResult> Update([FromBody] UserDto userDto)
+        public async Task<IActionResult> Update([FromBody] RoleRequest roleDto)
         {
             try
             {
-                var result = await _service.update(userDto);
+                var result = await _service.Update(roleDto);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -81,6 +65,21 @@ namespace crm.backend.CRM.Api.Controllers
             }
         }
 
+
+        [Authorize(Roles = "USER, ADMIN")]
+        [HttpDelete("delete")]
+        public async Task<IActionResult> Delete([FromQuery] int id)
+        {
+            try
+            {
+                var result = await _service.Delete(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }

@@ -1,0 +1,546 @@
+2026-05-17 14:07:42.896 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 154.0571 ms
+2026-05-17 14:07:43.008 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.5615 ms
+2026-05-17 14:07:43.065 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 79.0050 ms
+2026-05-17 14:07:43.065 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 70.7096 ms
+2026-05-17 14:07:43.065 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 77.8245 ms
+2026-05-17 14:07:43.065 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 77.5831 ms
+2026-05-17 14:07:43.334 +02:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.2966 ms
+2026-05-17 14:07:43.465 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 154.0345 ms
+2026-05-17 14:07:47.221 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 3.2281 ms
+2026-05-17 14:07:47.221 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 3.2270 ms
+2026-05-17 14:07:47.221 +02:00 [INF] HTTP OPTIONS /api/taskStatuses/get responded 204 in 3.3665 ms
+2026-05-17 14:07:48.040 +02:00 [INF] HTTP GET /api/users/get responded 401 in 799.0715 ms
+2026-05-17 14:07:48.040 +02:00 [INF] HTTP GET /api/task/get responded 401 in 574.5245 ms
+2026-05-17 14:07:48.040 +02:00 [INF] HTTP GET /api/taskStatuses/get responded 401 in 301.3455 ms
+2026-05-17 14:07:53.176 +02:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0993 ms
+2026-05-17 14:07:54.727 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1545.0177 ms
+2026-05-17 14:07:54.754 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 2.5089 ms
+2026-05-17 14:07:54.754 +02:00 [INF] HTTP OPTIONS /api/task/get responded 204 in 1.4200 ms
+2026-05-17 14:07:54.755 +02:00 [INF] HTTP OPTIONS /api/taskStatuses/get responded 204 in 0.0578 ms
+2026-05-17 14:07:54.887 +02:00 [INF] HTTP GET /api/users/get responded 200 in 128.7402 ms
+2026-05-17 14:07:54.887 +02:00 [INF] HTTP GET /api/taskStatuses/get responded 200 in 112.6013 ms
+2026-05-17 14:07:54.895 +02:00 [INF] HTTP GET /api/task/get responded 200 in 129.9556 ms
+2026-05-17 14:08:03.650 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0615 ms
+2026-05-17 14:08:03.720 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 64.4930 ms
+2026-05-17 14:08:05.918 +02:00 [INF] HTTP OPTIONS /api/companies/getbyId responded 204 in 0.1553 ms
+2026-05-17 14:08:05.918 +02:00 [INF] HTTP OPTIONS /api/companies/getcontacts responded 204 in 0.1422 ms
+2026-05-17 14:08:05.919 +02:00 [INF] HTTP OPTIONS /api/task/getByCompanyId responded 204 in 0.1657 ms
+2026-05-17 14:08:05.919 +02:00 [INF] HTTP OPTIONS /api/file/getByCompanyId responded 204 in 0.3145 ms
+2026-05-17 14:08:05.972 +02:00 [INF] HTTP GET /api/task/getByCompanyId responded 200 in 41.0970 ms
+2026-05-17 14:08:05.973 +02:00 [INF] HTTP GET /api/file/getByCompanyId responded 200 in 38.0567 ms
+2026-05-17 14:08:05.984 +02:00 [INF] HTTP GET /api/companies/getcontacts responded 200 in 57.4192 ms
+2026-05-17 14:08:05.994 +02:00 [INF] HTTP GET /api/companies/getbyId responded 200 in 68.9727 ms
+2026-05-17 16:02:58.512 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 119.2616 ms
+2026-05-17 16:02:58.593 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 3.2347 ms
+2026-05-17 16:02:58.629 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 47.2460 ms
+2026-05-17 16:02:58.629 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 45.7022 ms
+2026-05-17 16:02:58.637 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 54.6923 ms
+2026-05-17 16:02:58.629 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 47.2234 ms
+2026-05-17 16:02:58.930 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 127.9209 ms
+2026-05-17 16:03:03.371 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 12.2455 ms
+2026-05-17 16:03:03.371 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 12.6233 ms
+2026-05-17 16:03:05.251 +02:00 [INF] HTTP GET /api/users/get responded 200 in 1843.3224 ms
+2026-05-17 16:03:05.251 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 1840.5916 ms
+2026-05-17 16:06:17.353 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.7232 ms
+2026-05-17 16:06:17.366 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 1.1582 ms
+2026-05-17 16:06:17.790 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 153.0796 ms
+2026-05-17 16:06:17.790 +02:00 [INF] HTTP GET /api/users/get responded 200 in 308.0781 ms
+2026-05-17 16:06:19.178 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 29.4806 ms
+2026-05-17 16:06:41.642 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0875 ms
+2026-05-17 16:06:41.643 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0757 ms
+2026-05-17 16:06:41.664 +02:00 [INF] HTTP GET /api/users/get responded 200 in 14.6950 ms
+2026-05-17 16:06:41.664 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.2712 ms
+2026-05-17 16:06:43.489 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.0747 ms
+2026-05-17 16:06:45.191 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.2800 ms
+2026-05-17 16:06:46.348 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 6.2075 ms
+2026-05-17 16:06:47.823 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0525 ms
+2026-05-17 16:06:47.839 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.3493 ms
+2026-05-17 16:12:56.516 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0613 ms
+2026-05-17 16:12:56.516 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 12.5111 ms
+2026-05-17 16:12:56.754 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 49.7497 ms
+2026-05-17 16:12:56.760 +02:00 [INF] HTTP GET /api/users/get responded 200 in 44.7972 ms
+2026-05-17 16:15:48.955 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.5717 ms
+2026-05-17 16:15:49.424 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 369.0731 ms
+2026-05-17 16:56:39.396 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 368.5789 ms
+2026-05-17 16:56:39.542 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.5283 ms
+2026-05-17 16:56:39.626 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 84.8132 ms
+2026-05-17 16:56:39.626 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 86.5456 ms
+2026-05-17 16:56:39.626 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 86.5715 ms
+2026-05-17 16:56:39.630 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 68.2727 ms
+2026-05-17 16:56:40.102 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 326.0933 ms
+2026-05-17 16:56:44.206 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 2.2317 ms
+2026-05-17 16:56:44.206 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 2.2333 ms
+2026-05-17 16:56:44.583 +02:00 [ERR] HTTP GET /api/roles/get responded 500 in 358.7126 ms
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-17 16:56:44.671 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:56:44.705 +02:00 [ERR] Errore non gestito
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:56:46.063 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 1841.1844 ms
+2026-05-17 16:56:55.430 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.2143 ms
+2026-05-17 16:56:55.435 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0677 ms
+2026-05-17 16:56:55.447 +02:00 [ERR] HTTP GET /api/roles/get responded 500 in 4.7320 ms
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-17 16:56:55.463 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:56:55.483 +02:00 [ERR] Errore non gestito
+System.InvalidOperationException: Unable to resolve service for type 'crm.backend.CRM.Application.Services.RoleService' while attempting to activate 'crm.backend.CRM.Api.Controllers.RolesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method18(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:56:55.533 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 94.9877 ms
+2026-05-17 16:57:41.753 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 98.2772 ms
+2026-05-17 16:57:41.823 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 4.2662 ms
+2026-05-17 16:57:41.843 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 26.8880 ms
+2026-05-17 16:57:41.843 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 27.4081 ms
+2026-05-17 16:57:41.843 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 27.6755 ms
+2026-05-17 16:57:41.844 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 28.0447 ms
+2026-05-17 16:57:42.086 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 119.4393 ms
+2026-05-17 16:57:46.542 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 16.1326 ms
+2026-05-17 16:57:46.542 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 16.3601 ms
+2026-05-17 16:57:48.174 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'crm.backend.CRM.Infrastructure.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-17 16:57:48.335 +02:00 [ERR] HTTP GET /api/roles/get responded 500 in 1581.0400 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-17 16:57:48.349 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:57:48.359 +02:00 [ERR] Errore non gestito
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:57:48.368 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 1601.6173 ms
+2026-05-17 16:58:16.350 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.3794 ms
+2026-05-17 16:58:16.356 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0744 ms
+2026-05-17 16:58:24.639 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'crm.backend.CRM.Infrastructure.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-17 16:58:24.654 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 8280.5079 ms
+2026-05-17 16:58:24.731 +02:00 [ERR] HTTP GET /api/roles/get responded 500 in 8336.8547 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-17 16:58:24.740 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 16:58:24.749 +02:00 [ERR] Errore non gestito
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method37(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at crm.backend.CRM.Application.Services.RoleService.Get() in C:\dev\crm.backend\crm.backend\CRM.Application\Services\RoleService.cs:line 20
+   at crm.backend.CRM.Api.Controllers.RolesController.GetAll() in C:\dev\crm.backend\crm.backend\CRM.Api\Controllers\RolesController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:01:24.028 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 91.2157 ms
+2026-05-17 17:01:24.117 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 30.2336 ms
+2026-05-17 17:01:24.138 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 57.6390 ms
+2026-05-17 17:01:24.138 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 58.9932 ms
+2026-05-17 17:01:24.138 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 59.6095 ms
+2026-05-17 17:01:24.139 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 59.8574 ms
+2026-05-17 17:01:24.376 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 145.0818 ms
+2026-05-17 17:01:27.099 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 3.3308 ms
+2026-05-17 17:01:27.099 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 3.4699 ms
+2026-05-17 17:01:32.151 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 5042.4526 ms
+2026-05-17 17:01:32.167 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 5033.9579 ms
+2026-05-17 17:01:55.442 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1006 ms
+2026-05-17 17:01:55.442 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 1.1224 ms
+2026-05-17 17:01:55.662 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 158.7212 ms
+2026-05-17 17:01:55.662 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 173.3131 ms
+2026-05-17 17:02:52.782 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0940 ms
+2026-05-17 17:02:52.789 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1163 ms
+2026-05-17 17:02:53.072 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 41.2970 ms
+2026-05-17 17:02:53.095 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 31.4079 ms
+2026-05-17 17:03:17.387 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0919 ms
+2026-05-17 17:03:17.389 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1050 ms
+2026-05-17 17:03:17.447 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 27.0997 ms
+2026-05-17 17:03:17.649 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 13.2771 ms
+2026-05-17 17:04:29.504 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1312 ms
+2026-05-17 17:04:29.540 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0807 ms
+2026-05-17 17:04:29.586 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 58.3932 ms
+2026-05-17 17:04:29.600 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 9.8881 ms
+2026-05-17 17:05:14.396 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1274 ms
+2026-05-17 17:05:14.396 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1794 ms
+2026-05-17 17:05:14.421 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 15.1238 ms
+2026-05-17 17:05:14.431 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 17.7667 ms
+2026-05-17 17:05:38.636 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.3551 ms
+2026-05-17 17:05:38.639 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0595 ms
+2026-05-17 17:05:38.674 +02:00 [INF] HTTP GET /api/users/get responded 200 in 31.8703 ms
+2026-05-17 17:05:38.677 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 31.0188 ms
+2026-05-17 17:05:40.390 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.2793 ms
+2026-05-17 17:05:40.411 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 12.0872 ms
+2026-05-17 17:05:41.398 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 9.3096 ms
+2026-05-17 17:05:42.229 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0571 ms
+2026-05-17 17:05:42.240 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 6.6081 ms
+2026-05-17 17:05:42.921 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 9.6737 ms
+2026-05-17 17:05:43.815 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 15.7960 ms
+2026-05-17 17:06:29.639 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.1309 ms
+2026-05-17 17:06:29.659 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 12.7818 ms
+2026-05-17 17:06:32.257 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0896 ms
+2026-05-17 17:06:32.419 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 19.3928 ms
+2026-05-17 17:06:33.641 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.3456 ms
+2026-05-17 17:06:34.395 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0651 ms
+2026-05-17 17:06:34.414 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 9.7955 ms
+2026-05-17 17:06:36.316 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0505 ms
+2026-05-17 17:06:36.333 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 10.8971 ms
+2026-05-17 17:06:42.838 +02:00 [INF] HTTP OPTIONS /api/users/delete responded 204 in 0.0474 ms
+2026-05-17 17:06:42.983 +02:00 [INF] HTTP DELETE /api/users/delete responded 200 in 139.0994 ms
+2026-05-17 17:06:48.464 +02:00 [INF] HTTP OPTIONS /api/users/delete responded 204 in 0.0354 ms
+2026-05-17 17:06:48.487 +02:00 [INF] HTTP DELETE /api/users/delete responded 200 in 16.6044 ms
+2026-05-17 17:06:51.448 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0576 ms
+2026-05-17 17:06:51.450 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0395 ms
+2026-05-17 17:06:51.529 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 67.7779 ms
+2026-05-17 17:06:51.537 +02:00 [INF] HTTP GET /api/users/get responded 200 in 76.6614 ms
+2026-05-17 17:06:54.539 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0861 ms
+2026-05-17 17:06:54.541 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0400 ms
+2026-05-17 17:06:54.573 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 19.3462 ms
+2026-05-17 17:06:54.597 +02:00 [INF] HTTP GET /api/users/getbyId responded 404 in 46.2139 ms
+2026-05-17 17:07:02.946 +02:00 [INF] HTTP OPTIONS /api/users/save responded 204 in 0.6114 ms
+2026-05-17 17:07:03.004 +02:00 [INF] HTTP POST /api/users/save responded 400 in 51.5736 ms
+2026-05-17 17:09:33.002 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0660 ms
+2026-05-17 17:09:33.015 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1211 ms
+2026-05-17 17:09:33.281 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 43.3618 ms
+2026-05-17 17:09:33.325 +02:00 [INF] HTTP GET /api/users/getbyId responded 404 in 89.8789 ms
+2026-05-17 17:09:47.221 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0976 ms
+2026-05-17 17:09:47.224 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 1.0403 ms
+2026-05-17 17:09:47.298 +02:00 [INF] HTTP GET /api/users/getbyId responded 404 in 11.5465 ms
+2026-05-17 17:09:47.310 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 19.8904 ms
+2026-05-17 17:09:57.248 +02:00 [INF] HTTP OPTIONS /api/users/save responded 204 in 0.0628 ms
+2026-05-17 17:09:57.617 +02:00 [INF] HTTP POST /api/users/save responded 200 in 362.6997 ms
+2026-05-17 17:09:57.654 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0318 ms
+2026-05-17 17:09:57.657 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0343 ms
+2026-05-17 17:09:57.677 +02:00 [INF] HTTP GET /api/users/get responded 200 in 12.1315 ms
+2026-05-17 17:09:57.692 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 23.8133 ms
+2026-05-17 17:10:03.047 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0268 ms
+2026-05-17 17:10:03.072 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 18.0436 ms
+2026-05-17 17:10:20.418 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0385 ms
+2026-05-17 17:10:20.431 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 6.6177 ms
+2026-05-17 17:10:21.836 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1823 ms
+2026-05-17 17:10:21.850 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 8.4328 ms
+2026-05-17 21:40:29.247 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0417 ms
+2026-05-17 21:40:29.302 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 29.2904 ms
+2026-05-17 21:40:31.205 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0495 ms
+2026-05-17 21:40:31.225 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 10.7310 ms
+2026-05-17 21:42:15.379 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 101.8315 ms
+2026-05-17 21:42:15.470 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 9.1230 ms
+2026-05-17 21:42:15.503 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 41.9030 ms
+2026-05-17 21:42:15.503 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 42.0713 ms
+2026-05-17 21:42:15.503 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 40.8483 ms
+2026-05-17 21:42:15.503 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 41.2046 ms
+2026-05-17 21:42:15.750 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 134.6073 ms
+2026-05-17 21:42:18.227 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 4.2462 ms
+2026-05-17 21:42:18.227 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 4.7780 ms
+2026-05-17 21:42:20.164 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 1873.5562 ms
+2026-05-17 21:42:20.183 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 1869.1357 ms
+2026-05-17 21:42:22.840 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0982 ms
+2026-05-17 21:42:22.841 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0609 ms
+2026-05-17 21:42:22.937 +02:00 [INF] HTTP GET /api/users/get responded 200 in 90.8536 ms
+2026-05-17 21:42:22.938 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 86.5605 ms
+2026-05-17 21:42:24.718 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1792 ms
+2026-05-17 21:42:24.749 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 24.1207 ms
+2026-05-17 21:42:38.878 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 1.3332 ms
+2026-05-17 21:42:38.878 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1002 ms
+2026-05-17 21:42:55.096 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 16200.4845 ms
+2026-05-17 21:42:55.107 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 16204.4625 ms
+2026-05-17 21:43:04.290 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1330 ms
+2026-05-17 21:43:04.290 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0560 ms
+2026-05-17 21:43:04.444 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 15.8161 ms
+2026-05-17 21:43:04.621 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 208.4988 ms
+2026-05-17 21:43:38.026 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1272 ms
+2026-05-17 21:43:38.028 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0684 ms
+2026-05-17 21:43:38.125 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 32.6994 ms
+2026-05-17 21:43:38.231 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 9.3849 ms
+2026-05-17 21:43:53.685 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.3815 ms
+2026-05-17 21:43:53.690 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0642 ms
+2026-05-17 21:43:53.828 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 27.8465 ms
+2026-05-17 21:43:53.836 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 26.7210 ms
+2026-05-17 21:44:40.647 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0975 ms
+2026-05-17 21:44:40.687 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.0861 ms
+2026-05-17 21:44:40.912 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 29.8346 ms
+2026-05-17 21:44:41.004 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 13.4671 ms
+2026-05-17 21:44:43.588 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 9.0661 ms
+2026-05-17 21:44:43.649 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 71.0673 ms
+2026-05-17 21:44:46.642 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.1922 ms
+2026-05-17 21:44:46.652 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.2026 ms
+2026-05-17 21:44:46.731 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 12.7705 ms
+2026-05-17 21:44:46.755 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 16.9518 ms
+2026-05-17 21:44:51.393 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 16.3839 ms
+2026-05-17 21:44:51.432 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 56.6589 ms
+2026-05-17 21:44:53.515 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0942 ms
+2026-05-17 21:44:53.516 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1947 ms
+2026-05-17 21:44:53.547 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 15.1306 ms
+2026-05-17 21:44:53.553 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 14.8689 ms
+2026-05-17 21:44:54.876 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 22.6158 ms
+2026-05-17 21:44:54.877 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 24.2747 ms
+2026-05-17 21:44:58.435 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0449 ms
+2026-05-17 21:44:58.437 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0427 ms
+2026-05-17 21:44:58.453 +02:00 [INF] HTTP GET /api/users/get responded 200 in 11.4205 ms
+2026-05-17 21:44:58.458 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 12.3320 ms
+2026-05-17 21:44:59.734 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0301 ms
+2026-05-17 21:44:59.751 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 12.6564 ms
+2026-05-17 21:45:01.275 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 13.4185 ms
+2026-05-17 21:45:02.042 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0355 ms
+2026-05-17 21:45:02.053 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 6.2858 ms
+2026-05-17 21:45:02.630 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 6.9501 ms
+2026-05-17 21:45:03.153 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 12.4667 ms
+2026-05-17 21:45:03.637 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0329 ms
+2026-05-17 21:45:03.649 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.4120 ms
+2026-05-17 21:45:04.453 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 7.6508 ms
+2026-05-17 21:45:05.022 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.0224 ms
+2026-05-17 21:45:11.057 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 19.7506 ms
+2026-05-17 21:45:11.058 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0578 ms
+2026-05-17 21:45:11.114 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 18.0017 ms
+2026-05-17 21:45:11.127 +02:00 [INF] HTTP GET /api/users/get responded 200 in 30.3102 ms
+2026-05-17 21:45:11.998 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.3028 ms
+2026-05-17 21:45:12.001 +02:00 [INF] HTTP OPTIONS /api/roles/get responded 204 in 0.1941 ms
+2026-05-17 21:45:12.026 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 13.8835 ms
+2026-05-17 21:45:12.039 +02:00 [INF] HTTP GET /api/roles/get responded 200 in 22.7386 ms
+2026-05-17 21:45:15.879 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 5.8616 ms
+2026-05-17 21:45:16.937 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0313 ms
+2026-05-17 21:45:16.950 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 5.8810 ms
+2026-05-17 21:45:17.508 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0334 ms
+2026-05-17 21:45:17.520 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.3734 ms
+2026-05-17 21:45:18.127 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0344 ms
+2026-05-17 21:45:18.142 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 8.8902 ms
+2026-05-17 21:45:18.762 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.1675 ms
+2026-05-17 21:45:19.346 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 6.1087 ms
+2026-05-17 21:45:19.894 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 5.0896 ms
+2026-05-17 21:45:20.527 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 7.4089 ms
+2026-05-17 21:45:20.944 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 7.9509 ms
+2026-05-17 21:45:21.586 +02:00 [INF] HTTP GET /api/users/getbyId responded 200 in 6.8417 ms
+2026-05-17 21:45:21.977 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.8894 ms
+2026-05-17 21:45:36.290 +02:00 [INF] HTTP OPTIONS /api/users/getbyId responded 204 in 0.0384 ms
+2026-05-17 21:45:36.333 +02:00 [INF] HTTP GET /api/users/getbyId responded 404 in 29.3456 ms
+2026-05-17 21:45:52.822 +02:00 [INF] HTTP OPTIONS /api/users/save responded 204 in 0.2848 ms
+2026-05-17 21:45:53.247 +02:00 [INF] HTTP POST /api/users/save responded 200 in 421.9311 ms
+2026-05-17 21:45:53.276 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0295 ms
+2026-05-17 21:45:53.293 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 11.5658 ms
+2026-05-17 21:46:00.143 +02:00 [INF] HTTP OPTIONS /api/users/get responded 204 in 0.0304 ms
+2026-05-17 21:46:00.144 +02:00 [INF] HTTP OPTIONS /api/companies/get responded 204 in 0.0271 ms
+2026-05-17 21:46:00.295 +02:00 [INF] HTTP GET /api/users/get responded 200 in 48.3451 ms
+2026-05-17 21:46:00.309 +02:00 [INF] HTTP GET /api/companies/get responded 200 in 8.4561 ms
