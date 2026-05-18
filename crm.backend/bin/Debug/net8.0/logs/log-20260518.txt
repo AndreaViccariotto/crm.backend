@@ -1,0 +1,16 @@
+2026-05-18 21:38:34.466 +02:00 [INF] HTTP GET /swagger/index.html responded 304 in 151.9741 ms
+2026-05-18 21:38:34.595 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 1.6438 ms
+2026-05-18 21:38:34.619 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 48.5142 ms
+2026-05-18 21:38:34.619 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 48.4772 ms
+2026-05-18 21:38:34.620 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 40.5245 ms
+2026-05-18 21:38:34.630 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 58.6447 ms
+2026-05-18 21:38:35.935 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 153.8362 ms
+2026-05-18 21:38:54.364 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1864.9990 ms
+2026-05-18 22:14:02.625 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 105.2045 ms
+2026-05-18 22:14:02.704 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 58.4091 ms
+2026-05-18 22:14:02.706 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 62.3536 ms
+2026-05-18 22:14:02.704 +02:00 [INF] HTTP GET /swagger/index.css responded 304 in 60.8973 ms
+2026-05-18 22:14:02.704 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 60.9966 ms
+2026-05-18 22:14:02.690 +02:00 [INF] HTTP GET /swagger/index.js responded 304 in 37.8282 ms
+2026-05-18 22:14:04.764 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 151.0323 ms
+2026-05-18 22:14:17.371 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1577.5900 ms

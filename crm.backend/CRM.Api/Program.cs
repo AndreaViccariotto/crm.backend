@@ -33,7 +33,6 @@ builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<TaskService>();
 builder.Services.AddScoped<TaskStatusService>();
 builder.Services.AddScoped<CompanyService>();
-builder.Services.AddScoped<ContactService>();
 builder.Services.AddScoped<FileService>();
 builder.Services.AddScoped<RoleService>();
 
@@ -44,7 +43,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("Default"))
     ));
 
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "xXW2ap2VYZvLtnMOgK90xnDoTge8MeAu3h9pB7yM5Tu";
+var jwtKey = builder.Configuration["Jwt:Key"];
 
 // AUTH
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -52,10 +51,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false,
-            ValidateAudience = false,
+            ValidateIssuer = true,
+            ValidateAudience = true,
             ValidateIssuerSigningKey = true,
             ValidateLifetime = true,
+
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+
+            ClockSkew = TimeSpan.Zero,
+
             IssuerSigningKey = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(jwtKey))
         };
@@ -87,8 +92,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", policy =>
     {
         policy.WithOrigins(allowedOrigins)
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+              .WithMethods("GET", "POST", "PUT", "DELETE")
+              .WithHeaders("Authorization", "Content-Type");
     });
 });
 

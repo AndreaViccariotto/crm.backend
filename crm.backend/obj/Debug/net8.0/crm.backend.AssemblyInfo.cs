@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("0944c596-84ab-449f-9481-8b2a4629f81f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("crm.backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+290de183e9adfd0772be57fc923d21bd37bea733")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c62d531c1354a016ca489fcae3152818b41737c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("crm.backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("crm.backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
