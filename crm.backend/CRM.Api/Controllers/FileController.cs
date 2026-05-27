@@ -44,7 +44,7 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(await _service.GetByTaskId(taskId));
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "USER, ADMIN", Policy = "CanDeleteCrm")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int fileId)
         {

@@ -54,7 +54,7 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(str);
         }
 
-        [Authorize(Roles = "USER,ADMIN")]
+        [Authorize(Roles = "USER,ADMIN", Policy = "CanDeleteCrm")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {

@@ -36,7 +36,7 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(user);
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpPost("save")]
         public async Task<IActionResult> Save([FromBody] UserDto userDto)
         {
@@ -51,7 +51,7 @@ namespace crm.backend.CRM.Api.Controllers
             }
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
@@ -66,7 +66,7 @@ namespace crm.backend.CRM.Api.Controllers
             }
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpPost("update")]
         public async Task<IActionResult> Update([FromBody] UserDto userDto)
         {
@@ -81,6 +81,20 @@ namespace crm.backend.CRM.Api.Controllers
             }
         }
 
+        [Authorize(Roles = "ADMIN")]
+        [HttpPost("updateRole")]
+        public async Task<IActionResult> UpdateRole([FromBody] UserRoleRequest request)
+        {
+            try
+            {
+                var result = await _service.UpdateRole(request);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }

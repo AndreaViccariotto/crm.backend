@@ -1,12 +1,10 @@
-﻿namespace crm.backend.CRM.Domain.Entities
+namespace crm.backend.CRM.Domain.Entities
 {
-    public class Role
+    public class Permission
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public ICollection<User> Users { get; set; } = new List<User>();
         public ICollection<RolePermission> RolePermissions { get; set; } = new List<RolePermission>();
-        public ICollection<RoleModule> RoleModules { get; set; } = new List<RoleModule>();
     }
 }

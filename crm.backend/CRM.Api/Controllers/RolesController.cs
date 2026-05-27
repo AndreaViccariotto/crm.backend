@@ -35,7 +35,7 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(role);
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpPost("save")]
         public async Task<IActionResult> Save([FromBody] RoleRequest roleDto)
         {
@@ -50,7 +50,7 @@ namespace crm.backend.CRM.Api.Controllers
             }
         }
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpPost("update")]
         public async Task<IActionResult> Update([FromBody] RoleRequest roleDto)
         {
@@ -66,7 +66,7 @@ namespace crm.backend.CRM.Api.Controllers
         }
 
 
-        [Authorize(Roles = "USER, ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {

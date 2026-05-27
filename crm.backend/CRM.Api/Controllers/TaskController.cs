@@ -19,9 +19,23 @@ namespace crm.backend.CRM.Api.Controllers
 
         [Authorize(Roles = "USER,ADMIN")]
         [HttpGet("get")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(
+            [FromQuery] string? activityType,
+            [FromQuery] string? priority,
+            [FromQuery] int? statusId,
+            [FromQuery] int? userId,
+            [FromQuery] DateTime? fromDate,
+            [FromQuery] DateTime? toDate,
+            [FromQuery] string? search)
         {
-            return Ok(await _service.Get());
+            return Ok(await _service.Get(
+                activityType,
+                priority,
+                statusId,
+                userId,
+                fromDate,
+                toDate,
+                search));
         }
 
         [Authorize(Roles = "USER,ADMIN")]
@@ -73,7 +87,7 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(str);
         }
 
-        [Authorize(Roles = "USER,ADMIN")]
+        [Authorize(Roles = "USER,ADMIN", Policy = "CanDeleteCrm")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {

@@ -97,7 +97,11 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanDeleteCrm", policy =>
+        policy.RequireClaim("permission", "crm.delete"));
+});
 
 builder.Services.AddControllers();
 

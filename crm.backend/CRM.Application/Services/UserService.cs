@@ -18,8 +18,10 @@ namespace crm.backend.CRM.Application.Services
 
         public async Task<string> Register(UserDto body)
         {
-            if (_db.Users.Any(x => x.Id == body.Id))
+            if (await _db.Users.AnyAsync(x => x.username == body.Username))
                 throw new Exception("utente già esistente");
+
+            await EnsureRoleExists(body.RoleId);
 
             var user = new User
             {
@@ -38,17 +40,35 @@ namespace crm.backend.CRM.Application.Services
         public async Task<AuthenticationDto> Login(string username, string password)
         {
             var user = await _db.Users
-            .Include(x => x.Role)
-            .FirstOrDefaultAsync(x => x.username == username);
+                .Include(x => x.Role)
+                    .ThenInclude(x => x!.RolePermissions)
+                    .ThenInclude(x => x.Permission)
+                .Include(x => x.Role)
+                    .ThenInclude(x => x!.RoleModules)
+                    .ThenInclude(x => x.Module)
+                .FirstOrDefaultAsync(x => x.username == username);
 
             if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
                 throw new Exception("Credenziali non valide");
 
+            var roleName = user.Role?.Name ?? "USER";
+            var permissions = user.Role?.RolePermissions
+                .Where(x => x.Permission != null)
+                .Select(x => x.Permission.Name)
+                .ToList() ?? new List<string>();
+
+            var modules = user.Role?.RoleModules
+                .Where(x => x.Module != null)
+                .Select(x => x.Module.Name)
+                .ToList() ?? new List<string>();
+
             AuthenticationDto response = new AuthenticationDto
             {
                 Id = user.Id,
-                Role = user.Role?.Name ?? "USER",
-                jwt = _jwt.GenerateToken(user.Id, user.Role?.Name ?? "USER")
+                Role = roleName,
+                Permissions = permissions,
+                Modules = modules,
+                jwt = _jwt.GenerateToken(user.Id, roleName, permissions, modules)
             };
 
             return response;
@@ -62,7 +82,9 @@ namespace crm.backend.CRM.Application.Services
                 {
                     Id = x.Id,
                     Username = x.username,
-                    Role = x.Role.Name
+                    Email = x.Email ?? "",
+                    Role = x.Role != null ? x.Role.Name : "",
+                    RoleId = x.RoleId
                 })
                 .ToListAsync();
         }
@@ -80,7 +102,8 @@ namespace crm.backend.CRM.Application.Services
             {
                 Id = user.Id,
                 Username = user.username,
-                Role = user.Role.Name,
+                Email = user.Email ?? "",
+                Role = user.Role != null ? user.Role.Name : "",
                 RoleId = user.RoleId,
             };
         }
@@ -103,8 +126,12 @@ namespace crm.backend.CRM.Application.Services
             if (user == null)
                 throw new Exception("Utente non trovato");
 
+            await EnsureRoleExists(body.RoleId);
+
             user.username = body.Username;
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(body.Password);
+            user.Email = body.Email;
+            if (!string.IsNullOrWhiteSpace(body.Password))
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(body.Password);
             user.RoleId = body.RoleId;
 
             _db.Users.Update(user);
@@ -113,6 +140,29 @@ namespace crm.backend.CRM.Application.Services
             return "Utente aggiornato con successo";
         }
 
+        public async Task<string> UpdateRole(UserRoleRequest body)
+        {
+            var user = await _db.Users.FindAsync(body.UserId);
+            if (user == null)
+                throw new Exception("Utente non trovato");
+
+            await EnsureRoleExists(body.RoleId);
+
+            user.RoleId = body.RoleId;
+            await _db.SaveChangesAsync();
+
+            return "Ruolo utente aggiornato con successo";
+        }
+
+        private async System.Threading.Tasks.Task EnsureRoleExists(int? roleId)
+        {
+            if (roleId == null)
+                return;
+
+            var exists = await _db.Roles.AnyAsync(r => r.Id == roleId);
+            if (!exists)
+                throw new Exception("Ruolo non trovato");
+        }
 
     }
 }
