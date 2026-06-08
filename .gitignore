@@ -1,2 +1,12 @@
 .vs/
 /crm.backend/uploads/
+crm.backend/bin/
+crm.backend/obj/
+crm.backend/.vs/
+crm.backend/logs/
+crm.backend/**/logs/
+crm.backend/*.user
+crm.backend/*.suo
+crm.backend/appsettings.Development.Local.json
+.env
+backups/

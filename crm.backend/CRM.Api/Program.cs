@@ -1,4 +1,4 @@
-﻿using crm.backend.CRM.Application.Services;
+using crm.backend.CRM.Application.Services;
 using crm.backend.CRM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -7,26 +7,19 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi;
 using Serilog;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.HttpOverrides;
 
-
-// Serilog initialization
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
     .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
     .WriteTo.Console()
-    .WriteTo.File(
-        Path.Combine(AppContext.BaseDirectory, "logs/log-.txt"),
-        rollingInterval: RollingInterval.Day)
+    .WriteTo.File(Path.Combine(AppContext.BaseDirectory, "logs/log-.txt"), rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-
 var builder = WebApplication.CreateBuilder(args);
-
-// LOGS
 builder.Host.UseSerilog();
 
-// SERVICES
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ContactService>();
 builder.Services.AddScoped<JwtService>();
@@ -35,17 +28,34 @@ builder.Services.AddScoped<TaskStatusService>();
 builder.Services.AddScoped<CompanyService>();
 builder.Services.AddScoped<FileService>();
 builder.Services.AddScoped<RoleService>();
+builder.Services.AddScoped<ArticleService>();
+builder.Services.AddScoped<QuoteService>();
+builder.Services.AddScoped<SalesOrderService>();
+builder.Services.AddScoped<PurchaseOrderService>();
+builder.Services.AddScoped<GeneralSettingsService>();
+builder.Services.AddScoped<CustomFieldService>();
+builder.Services.AddScoped<CommercialAutomationService>();
+builder.Services.AddScoped<CommercialDashboardService>();
+builder.Services.AddScoped<CommercialNotificationService>();
+builder.Services.AddScoped<AccessControlService>();
+builder.Services.AddScoped<TicketService>();
+builder.Services.AddScoped<InterventionService>();
+builder.Services.AddHttpContextAccessor();
 
-// DB
+var connectionString = builder.Configuration.GetConnectionString("Default");
+if (string.IsNullOrWhiteSpace(connectionString))
+    throw new InvalidOperationException("ConnectionStrings:Default non configurata.");
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
-        builder.Configuration.GetConnectionString("Default"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("Default"))
+        connectionString,
+        ServerVersion.AutoDetect(connectionString)
     ));
 
 var jwtKey = builder.Configuration["Jwt:Key"];
+if (string.IsNullOrWhiteSpace(jwtKey) || jwtKey.Length < 32)
+    throw new InvalidOperationException("Jwt:Key deve essere configurata con almeno 32 caratteri.");
 
-// AUTH
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -55,23 +65,24 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateIssuerSigningKey = true,
             ValidateLifetime = true,
-
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
-
             ClockSkew = TimeSpan.Zero,
-
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(jwtKey))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
         };
     });
 
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    options.KnownNetworks.Clear();
+    options.KnownProxies.Clear();
+});
 
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "CRM API", Version = "v1" });
-
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -83,66 +94,65 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-var allowedOrigins = builder.Configuration
-    .GetSection("Cors:AllowedOrigins")
-    .Get<string[]>();
-
+var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
+    ?? Array.Empty<string>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
     {
-        policy.WithOrigins(allowedOrigins)
-              .WithMethods("GET", "POST", "PUT", "DELETE")
-              .WithHeaders("Authorization", "Content-Type");
+        if (allowedOrigins.Length > 0)
+        {
+            policy.WithOrigins(allowedOrigins)
+                  .WithMethods("GET", "POST", "PUT", "DELETE")
+                  .WithHeaders("Authorization", "Content-Type");
+        }
     });
 });
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("CanDeleteCrm", policy =>
-        policy.RequireClaim("permission", "crm.delete"));
+    options.AddPolicy("CanDeleteCrm", policy => policy.RequireClaim("permission", "crm.delete"));
 });
 
 builder.Services.AddControllers();
-
 var app = builder.Build();
 
-// ERROR HANDLING
+if (app.Configuration.GetValue<bool>("Database:Initialize"))
+    await DatabaseInitializer.InitializeAsync(app.Services, app.Configuration, app.Logger);
+
+app.UseForwardedHeaders();
 app.UseExceptionHandler(errorApp =>
 {
     errorApp.Run(async context =>
     {
         var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
-
         var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
         var exception = exceptionHandlerPathFeature?.Error;
-
-        if (exception != null)
-        {
+        var unauthorized = exception is UnauthorizedAccessException;
+        if (unauthorized)
+            logger.LogWarning("Tentativo di accesso con credenziali non valide");
+        else if (exception != null)
             logger.LogError(exception, "Errore non gestito");
-        }
-
-        context.Response.StatusCode = 500;
+        context.Response.StatusCode = unauthorized
+            ? StatusCodes.Status401Unauthorized
+            : StatusCodes.Status500InternalServerError;
         context.Response.ContentType = "application/json";
-
-        await context.Response.WriteAsync(
-            System.Text.Json.JsonSerializer.Serialize(new
-            {
-                message = "Errore interno"
-            }));
+        await context.Response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(new
+        {
+            message = unauthorized ? exception!.Message : "Errore interno"
+        }));
     });
 });
 
 app.UseSerilogRequestLogging();
-
 app.UseCors("CorsPolicy");
-
 app.UseSwagger();
 app.UseSwaggerUI();
-
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
+app.MapGet("/health", async (AppDbContext db) =>
+    await db.Database.CanConnectAsync()
+        ? Results.Ok(new { status = "healthy" })
+        : Results.Problem("Database non raggiungibile"));
 app.Run();

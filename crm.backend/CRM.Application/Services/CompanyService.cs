@@ -8,10 +8,12 @@ namespace crm.backend.CRM.Application.Services
     public class CompanyService
     {
         private readonly AppDbContext _db;
+        private readonly CustomFieldService _customFields;
 
-        public CompanyService(AppDbContext db)
+        public CompanyService(AppDbContext db, CustomFieldService customFields)
         {
             _db = db;
+            _customFields = customFields;
         }
 
         public async Task<List<CompanyResponse>> Get()
@@ -44,7 +46,8 @@ namespace crm.backend.CRM.Application.Services
                 email = company.email,
                 phone = company.phone,
                 address = company.address,
-                city = company.city
+                city = company.city,
+                CustomFields = await _customFields.GetValues("companies", company.Id)
             };
         }
 
@@ -79,6 +82,7 @@ namespace crm.backend.CRM.Application.Services
     
                 _db.Companies.Add(company);
                 await _db.SaveChangesAsync();
+                await _customFields.SaveValues("companies", company.Id, request.CustomFields);
     
                 return "Azienda salvata con successo";
         }
@@ -97,6 +101,7 @@ namespace crm.backend.CRM.Application.Services
             company.city = request.city;
 
             await _db.SaveChangesAsync();
+            await _customFields.SaveValues("companies", company.Id, request.CustomFields);
 
             return "Azienda aggiornata con successo";
         }
@@ -107,6 +112,7 @@ namespace crm.backend.CRM.Application.Services
             if (company == null)
                 return "Azienda non trovata";
 
+            await _customFields.DeleteValues("companies", id);
             _db.Companies.Remove(company);
             await _db.SaveChangesAsync();
 
@@ -114,3 +120,10 @@ namespace crm.backend.CRM.Application.Services
         }
     }
 }
+
+
+
+
+
+
+

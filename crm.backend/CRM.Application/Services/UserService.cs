@@ -1,4 +1,5 @@
-﻿using crm.backend.CRM.Api.DTO;
+﻿using System.Text.Json;
+using crm.backend.CRM.Api.DTO;
 using crm.backend.CRM.Domain.Entities;
 using crm.backend.CRM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +38,7 @@ namespace crm.backend.CRM.Application.Services
             return "Utente creato con successo";
         }
 
-        public async Task<AuthenticationDto> Login(string username, string password)
+        public async Task<AuthenticationDto?> Login(string username, string password)
         {
             var user = await _db.Users
                 .Include(x => x.Role)
@@ -49,7 +50,7 @@ namespace crm.backend.CRM.Application.Services
                 .FirstOrDefaultAsync(x => x.username == username);
 
             if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
-                throw new Exception("Credenziali non valide");
+                return null;
 
             var roleName = user.Role?.Name ?? "USER";
             var permissions = user.Role?.RolePermissions
@@ -61,6 +62,14 @@ namespace crm.backend.CRM.Application.Services
                 .Where(x => x.Module != null)
                 .Select(x => x.Module.Name)
                 .ToList() ?? new List<string>();
+
+            var activeModuleNames = await GetActiveModuleNameSet();
+            if (activeModuleNames != null)
+            {
+                modules = modules
+                    .Where(module => activeModuleNames.Contains(module))
+                    .ToList();
+            }
 
             AuthenticationDto response = new AuthenticationDto
             {
@@ -154,6 +163,26 @@ namespace crm.backend.CRM.Application.Services
             return "Ruolo utente aggiornato con successo";
         }
 
+
+        private async Task<HashSet<string>?> GetActiveModuleNameSet()
+        {
+            var setting = await _db.GeneralSettings.FirstOrDefaultAsync(item => item.Key == "activeModules");
+            if (setting == null)
+                return null;
+
+            try
+            {
+                var modules = JsonSerializer.Deserialize<List<string>>(setting.Value ?? "[]") ?? new List<string>();
+                return modules
+                    .Where(module => !string.IsNullOrWhiteSpace(module))
+                    .Select(module => module.Trim())
+                    .ToHashSet(StringComparer.OrdinalIgnoreCase);
+            }
+            catch
+            {
+                return new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            }
+        }
         private async System.Threading.Tasks.Task EnsureRoleExists(int? roleId)
         {
             if (roleId == null)

@@ -9,5 +9,7 @@
         public string phone { get; set; }
         public string address { get; set; }
         public string city { get; set; }
+        public Dictionary<string, string?> CustomFields { get; set; } = new();
     }
 }
+

@@ -8,10 +8,12 @@ namespace crm.backend.CRM.Application.Services
     public class ContactService
     {
         private readonly AppDbContext _db;
+        private readonly CustomFieldService _customFields;
 
-        public ContactService(AppDbContext db)
+        public ContactService(AppDbContext db, CustomFieldService customFields)
         {
             _db = db;
+            _customFields = customFields;
         }
 
         public async Task<string> Save(ContactRequest contact)
@@ -28,6 +30,7 @@ namespace crm.backend.CRM.Application.Services
             _db.Contacts.Add(newContact);
 
             await _db.SaveChangesAsync();
+            await _customFields.SaveValues("contacts", newContact.Id, contact.CustomFields);
 
             return "Contatto creato con successo.";
         }
@@ -52,7 +55,8 @@ namespace crm.backend.CRM.Application.Services
                     ? contact.Company.name
                     : null,
 
-                Company = contact.Company
+                Company = contact.Company,
+                CustomFields = await _customFields.GetValues("contacts", contact.Id)
             };
         }
 
@@ -113,9 +117,8 @@ namespace crm.backend.CRM.Application.Services
             contact.Phone = request.Phone;
             contact.Company_Id = request.Company_id;
 
-
-
             await _db.SaveChangesAsync();
+            await _customFields.SaveValues("contacts", contact.Id, request.CustomFields);
 
             return "Contatto aggiornato con successo";
         }
@@ -127,6 +130,7 @@ namespace crm.backend.CRM.Application.Services
                 if (contact == null)
                     return null;
     
+                await _customFields.DeleteValues("contacts", id);
                 _db.Contacts.Remove(contact);
                 await _db.SaveChangesAsync();
     
@@ -134,3 +138,11 @@ namespace crm.backend.CRM.Application.Services
         }
     }
 }
+
+
+
+
+
+
+
+

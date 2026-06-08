@@ -11,10 +11,12 @@ namespace crm.backend.CRM.Api.Controllers
     public class CompaniesController : ControllerBase
     {
         private readonly CompanyService _service;
+        private readonly AccessControlService _accessControl;
 
-        public CompaniesController(CompanyService service)
+        public CompaniesController(CompanyService service, AccessControlService accessControl)
         {
             _service = service;
+            _accessControl = accessControl;
         }
 
         [Authorize(Roles = "USER,ADMIN")]
@@ -54,10 +56,13 @@ namespace crm.backend.CRM.Api.Controllers
             return Ok(str);
         }
 
-        [Authorize(Roles = "USER,ADMIN", Policy = "CanDeleteCrm")]
+        [Authorize(Roles = "USER,ADMIN")]
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
+            if (!await _accessControl.HasPermission("crm.delete"))
+                return Forbid();
+
             var str = await _service.Delete(id);
             return Ok(str);
         }

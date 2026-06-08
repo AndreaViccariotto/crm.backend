@@ -1,4 +1,4 @@
-﻿namespace crm.backend.CRM.Api.DTO
+namespace crm.backend.CRM.Api.DTO
 {
     public class TaskResponse
     {
@@ -21,5 +21,8 @@
         public int? company_id { get; set; }
         public int? contact_id { get; set; }
         public int? status_id { get; set; }
+        public int? ticket_id { get; set; }
+        public Dictionary<string, string?> CustomFields { get; set; } = new();
     }
 }
+

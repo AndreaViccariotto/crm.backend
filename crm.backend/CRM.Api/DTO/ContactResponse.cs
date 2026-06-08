@@ -11,5 +11,7 @@ namespace crm.backend.CRM.Api.DTO
         public int Company_id { get; set; }
         public string company_name { get; set; }
         public Company Company { get; set; }
+        public Dictionary<string, string?> CustomFields { get; set; } = new();
     }
 }
+

@@ -19,7 +19,9 @@ namespace crm.backend.CRM.Api.Controllers
         public async Task<IActionResult> Login(AuthRequest request)
         {
             var token = await _service.Login(request.username, request.Password);
-            return Ok(token);
+            return token == null
+                ? Unauthorized(new { message = "Credenziali non valide" })
+                : Ok(token);
         }
     }
 }

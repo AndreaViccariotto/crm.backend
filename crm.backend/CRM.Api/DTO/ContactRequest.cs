@@ -7,5 +7,7 @@
         public string Email { get; set; }
         public string Phone { get; set; }
         public int Company_id { get; set; }
+        public Dictionary<string, string?> CustomFields { get; set; } = new();
     }
 }
+

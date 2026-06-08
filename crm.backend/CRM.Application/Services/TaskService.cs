@@ -8,10 +8,14 @@ namespace crm.backend.CRM.Application.Services
     public class TaskService
     {
         private readonly AppDbContext _db;
+        private readonly CustomFieldService _customFields;
+        private readonly InterventionService _interventions;
 
-        public TaskService(AppDbContext db)
+        public TaskService(AppDbContext db, CustomFieldService customFields, InterventionService interventions)
         {
             _db = db;
+            _customFields = customFields;
+            _interventions = interventions;
         }
 
         public async Task<List<TaskResponse>> Get(
@@ -65,7 +69,9 @@ namespace crm.backend.CRM.Application.Services
             if (task == null)
                 return null;
 
-            return ToResponse(task);  
+            var response = ToResponse(task);
+            response.CustomFields = await _customFields.GetValues("tasks", task.Id);
+            return response;  
         }
 
         public async Task<List<TaskResponse>> GetByCompanyId(int companyId, DateTime? fromDate, DateTime? toDate)
@@ -90,6 +96,8 @@ namespace crm.backend.CRM.Application.Services
 
         public async Task<string> Save(TaskRequest body)
         {
+            await ApplyTicketContext(body);
+
             var task = new Domain.Entities.Task
             {
                 Title = body.Title,
@@ -109,20 +117,25 @@ namespace crm.backend.CRM.Application.Services
                 user_id = body.user_id,
                 company_id = body.company_id,
                 contact_id = body.contact_id,
-                status_id = body.status_id
+                status_id = body.status_id,
+                ticket_id = body.ticket_id
             };
 
             _db.Tasks.Add(task);
             await _db.SaveChangesAsync();
+            await _customFields.SaveValues("tasks", task.Id, body.CustomFields);
+            await _interventions.EnsureFromCompletedTask(task);
 
-            return "Attività creata con successo";
+            return "AttivitÃƒÂ  creata con successo";
         }
 
         public async Task<string> Update(TaskRequest body)
         {
             var task = await _db.Tasks.FindAsync(body.Id);
             if (task == null)
-                return "Attività non trovata";
+                return "AttivitÃ  non trovata";
+
+            await ApplyTicketContext(body);
 
             task.Title = body.Title;
             task.due_date = body.due_date;
@@ -142,24 +155,44 @@ namespace crm.backend.CRM.Application.Services
             task.company_id = body.company_id;
             task.contact_id = body.contact_id;
             task.status_id = body.status_id;
+            task.ticket_id = body.ticket_id;
 
             await _db.SaveChangesAsync();
+            await _customFields.SaveValues("tasks", task.Id, body.CustomFields);
+            await _interventions.EnsureFromCompletedTask(task);
 
-            return "Attività aggiornata con successo";  
-        }
+            return "AttivitÃƒÂ  aggiornata con successo";  }
 
         public async Task<string> Delete(int id)
         {
             var task = await _db.Tasks.FindAsync(id);
             if (task == null)
-                return "Attività non trovata";
+                return "AttivitÃ  non trovata";
 
+            if (await _db.Interventions.AnyAsync(item => item.TaskId == id))
+                throw new Exception("L'attivita ha generato un rapporto di intervento e non puo essere eliminata");
+
+            await _customFields.DeleteValues("tasks", id);
             _db.Tasks.Remove(task);
             await _db.SaveChangesAsync();
 
-            return "Attività eliminata con successo";
+            return "AttivitÃ  eliminata con successo";
         }
 
+        private async System.Threading.Tasks.Task ApplyTicketContext(TaskRequest body)
+        {
+            if (!body.ticket_id.HasValue)
+                return;
+
+            var ticket = await _db.Tickets.AsNoTracking().FirstOrDefaultAsync(item => item.Id == body.ticket_id.Value);
+            if (ticket == null)
+                throw new Exception("Ticket collegato non trovato");
+
+            body.company_id = ticket.CompanyId;
+            body.contact_id = ticket.ContactId;
+            if (ticket.AssignedUserId.HasValue)
+                body.user_id = ticket.AssignedUserId.Value;
+        }
         private static TaskResponse ToResponse(Domain.Entities.Task task)
         {
             return new TaskResponse
@@ -182,7 +215,8 @@ namespace crm.backend.CRM.Application.Services
                 user_id = task.user_id,
                 company_id = task.company_id,
                 contact_id = task.contact_id,
-                status_id = task.status_id
+                status_id = task.status_id,
+                ticket_id = task.ticket_id
             };
         }
 
@@ -207,7 +241,8 @@ namespace crm.backend.CRM.Application.Services
                 user_id = task.user_id,
                 company_id = task.company_id,
                 contact_id = task.contact_id,
-                status_id = task.status_id
+                status_id = task.status_id,
+                ticket_id = task.ticket_id
             };
 
         private static string NormalizeActivityType(string? activityType)
@@ -221,3 +256,10 @@ namespace crm.backend.CRM.Application.Services
         }
     }
 }
+
+
+
+
+
+
+

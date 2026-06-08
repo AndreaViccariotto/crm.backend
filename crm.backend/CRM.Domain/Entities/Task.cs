@@ -1,4 +1,4 @@
-﻿namespace crm.backend.CRM.Domain.Entities
+namespace crm.backend.CRM.Domain.Entities
 {
     public class Task
     {
@@ -21,5 +21,7 @@
         public int? company_id { get; set; }
         public int? contact_id { get; set; }
         public int? status_id { get; set; } = 1;
+        public int? ticket_id { get; set; }
+        public Ticket? Ticket { get; set; }
     }
 }

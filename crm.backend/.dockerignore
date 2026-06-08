@@ -1,0 +1,11 @@
+bin
+obj
+.vs
+.git
+.gitignore
+uploads
+logs
+Dockerfile*
+*.user
+*.suo
+appsettings.Development.Local.json
